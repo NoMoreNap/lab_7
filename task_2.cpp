@@ -6,7 +6,7 @@ int pos = 3;
 
 int Fibonacci(int max) {
     int sum = 0, prev = 0, current = 1;
-    while (true) {
+    do {
         sum = prev + current;
         prev = current;
         current = sum;
@@ -14,7 +14,7 @@ int Fibonacci(int max) {
             break;
         }
         pos++;
-    }
+    } while (true);
     return sum;
 }
 
